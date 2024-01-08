@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="EWHWcwf3oBvPnhn254YyBa" LanguageVersion="2022.5.0-0416-73f6eb1214" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="EWHWcwf3oBvPnhn254YyBa" LanguageVersion="2023.5.3-0423-gee17475a3a" Version="0.128">
   <Patch Id="Rgz0iK0cdl5O6XLZAnSI2k">
-    <Canvas Id="EtMz6eWyJpjMOVOROl6714" DefaultCategory="VL.NewLibrary.Template" CanvasType="FullCategory" />
+    <Canvas Id="EtMz6eWyJpjMOVOROl6714" DefaultCategory="FastNoiseLite" CanvasType="FullCategory" />
     <!--
 
     ************************ Application ************************
@@ -23,5 +23,5 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Ko9OqCOVyY7Pz8mbJrOqb0" Location="VL.CoreLib" Version="2021.3.3" />
+  <NugetDependency Id="Ko9OqCOVyY7Pz8mbJrOqb0" Location="VL.CoreLib" Version="2023.5.3-0423-gee17475a3a" />
 </Document>
