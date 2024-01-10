@@ -51,6 +51,7 @@ using System;
 using System.Runtime.CompilerServices;
 using Stride.Core.Mathematics;
 
+// had to add a namespace otherwise vvvv would throw an exception. b
 namespace FastNoiseLite
 {
 
@@ -106,6 +107,7 @@ namespace FastNoiseLite
 
     public enum DomainWarpType
     {
+        None, //  added that for convenience. b
         OpenSimplex2,
         OpenSimplex2Reduced,
         BasicGrid
@@ -330,14 +332,11 @@ namespace FastNoiseLite
 
         public float GetNoise(Vector2 xy)
         {
-
             float x = xy.X;
             float y = xy.Y;
 
             return GetNoise(x, y);
-
         }
-
 
         /// <summary>
         /// 3D noise at given position using current settings
@@ -365,13 +364,11 @@ namespace FastNoiseLite
 
         public float GetNoise(Vector3 xyz)
         {
-
             float x = xyz.X;
             float y = xyz.Y;
             float z = xyz.Z;
 
             return GetNoise(x, y, z);
-
         }
 
         /// <summary>
@@ -406,7 +403,6 @@ namespace FastNoiseLite
             return xy;
         }
 
-
         /// <summary>
         /// 3D warps the input position using current domain warp settings
         /// </summary>
@@ -432,14 +428,12 @@ namespace FastNoiseLite
             }
         }
 
-
         public Vector3 DomainWarp(Vector3 xyz)
         {
             DomainWarp(ref xyz.X, ref xyz.Y, ref xyz.Z);
 
             return xyz;
         }
-
 
         private static readonly float[] Gradients2D =
         {
