@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="EWHWcwf3oBvPnhn254YyBa" LanguageVersion="2023.5.3-0423-gee17475a3a" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="EWHWcwf3oBvPnhn254YyBa" LanguageVersion="2023.5.3-0437-g18ca83680e" Version="0.128">
   <Patch Id="Rgz0iK0cdl5O6XLZAnSI2k">
     <Canvas Id="EtMz6eWyJpjMOVOROl6714" DefaultCategory="FastNoiseLite" CanvasType="FullCategory">
       <!--
@@ -7,7 +7,7 @@
     ************************ CellularDistanceFunction ************************
 
 -->
-      <Node Name="CellularDistanceFunction" Bounds="98,111" Id="ISb1bUECHZxNsBW85uVIsQ">
+      <Node Name="CellularDistanceFunction" Bounds="119,126" Id="ISb1bUECHZxNsBW85uVIsQ">
         <p:NodeReference>
           <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
           <CategoryReference Kind="Category" Name="Primitive" />
@@ -25,7 +25,7 @@
     ************************ CellularReturnType ************************
 
 -->
-      <Node Name="CellularReturnType" Bounds="378,111" Id="EVXXTz41WNUOzUjsnqLlln">
+      <Node Name="CellularReturnType" Bounds="119,185" Id="EVXXTz41WNUOzUjsnqLlln">
         <p:NodeReference>
           <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
           <CategoryReference Kind="Category" Name="Primitive" />
@@ -43,7 +43,7 @@
     ************************ DomainWarpType ************************
 
 -->
-      <Node Name="DomainWarpType" Bounds="98,161" Id="S2Iku2FVbzhOdqyprRzgcO">
+      <Node Name="DomainWarpType" Bounds="119,256" Id="S2Iku2FVbzhOdqyprRzgcO">
         <p:NodeReference>
           <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
           <CategoryReference Kind="Category" Name="Primitive" />
@@ -58,28 +58,10 @@
       </Node>
       <!--
 
-    ************************ FastNoiseLite ************************
-
--->
-      <Node Name="FastNoiseLite" Bounds="378,161" Id="Lz6yQUZo5XIN2QRXRKUl7e">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="FastNoiseLite.dll">
-          <Choice Kind="TypeFlag" Name="FastNoiseLite" />
-        </p:TypeAnnotation>
-        <Patch Id="CWo1XKq8oH6OyH40EbnErC">
-          <Canvas Id="Eztq0jc72UWNdV4JNUnlNG" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="FsCJNg4SCvxNMNDisbn4A1" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
     ************************ FractalType ************************
 
 -->
-      <Node Name="FractalType" Bounds="98,211" Id="R6KdF9rhh9vL6tAldiWxo8">
+      <Node Name="FractalType" Bounds="126,326" Id="R6KdF9rhh9vL6tAldiWxo8">
         <p:NodeReference>
           <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
           <CategoryReference Kind="Category" Name="Primitive" />
@@ -97,7 +79,7 @@
     ************************ NoiseType ************************
 
 -->
-      <Node Name="NoiseType" Bounds="378,211" Id="SjEZMuUQlVWM2buEmRAKAj">
+      <Node Name="NoiseType" Bounds="136,524" Id="SjEZMuUQlVWM2buEmRAKAj">
         <p:NodeReference>
           <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
           <CategoryReference Kind="Category" Name="Primitive" />
@@ -115,7 +97,7 @@
     ************************ RotationType3D ************************
 
 -->
-      <Node Name="RotationType3D" Bounds="98,261" Id="SaJ1vp4flhULv1nAdcOpAd">
+      <Node Name="RotationType3D" Bounds="136,583" Id="SaJ1vp4flhULv1nAdcOpAd">
         <p:NodeReference>
           <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
           <CategoryReference Kind="Category" Name="Primitive" />
@@ -126,6 +108,42 @@
         <Patch Id="TLOc0TXss5ZPIwdaklekqg">
           <Canvas Id="F9UZpuGv0KkLb7jO7PHYVX" BordersChecked="false" CanvasType="Group" />
           <ProcessDefinition Id="AlQTD17bj2pPuwblW0GfnK" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ DomainWarpFractalType ************************
+
+-->
+      <Node Name="DomainWarpFractalType" Bounds="152,378" Id="Up6aSmfkdZyNpEGCt4P99W">
+        <p:NodeReference>
+          <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="FastNoiseLite.dll">
+          <Choice Kind="TypeFlag" Name="DomainWarpFractalType" />
+        </p:TypeAnnotation>
+        <Patch Id="Etucun4AMIPMVsIecgbCVz">
+          <Canvas Id="Rx5IHuh6qy9QAnTwBQ7389" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="Pf0aoVod6SRM7vS8gnMdxm" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ GeneralFractalType ************************
+
+-->
+      <Node Name="GeneralFractalType" Bounds="152,428" Id="FsCOuBz50jzOyX8XY89Kxt">
+        <p:NodeReference>
+          <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="FastNoiseLite.dll">
+          <Choice Kind="TypeFlag" Name="GeneralFractalType" />
+        </p:TypeAnnotation>
+        <Patch Id="IlmrrFUCURHOJkDdecfDaI">
+          <Canvas Id="FzaWtAAGB6uNoGWoRFZZBq" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="SsB5KN2sZWqNmFj7XCWpiM" IsHidden="true" />
         </Patch>
       </Node>
     </Canvas>
@@ -150,6 +168,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Ko9OqCOVyY7Pz8mbJrOqb0" Location="VL.CoreLib" Version="2023.5.3-0423-gee17475a3a" />
+  <NugetDependency Id="Ko9OqCOVyY7Pz8mbJrOqb0" Location="VL.CoreLib" Version="2023.5.3-0437-g18ca83680e" />
   <PlatformDependency Id="Kkxh9JTSbnvMDvRjdCjYp5" Location="../lib/net6.0/FastNoiseLite.dll" />
 </Document>
