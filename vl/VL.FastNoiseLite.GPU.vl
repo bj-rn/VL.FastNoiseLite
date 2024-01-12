@@ -13,7 +13,21 @@
         <FullNameCategoryReference ID="Primitive" />
       </p:NodeReference>
       <Patch Id="PbUNtDBhKLVPbHQvb8Ta2L">
-        <Canvas Id="QOaMfDZHJrCLJ8x5mM6Dq2" CanvasType="Group" />
+        <Canvas Id="QOaMfDZHJrCLJ8x5mM6Dq2" CanvasType="Group">
+          <Node Bounds="459,389,77,19" Id="MyuwPpwjqpoQEhhwX5AfWu">
+            <p:NodeReference LastCategoryFullName="Stride.Textures.Source" LastDependency="VL.Stride.Rendering.EffectShaderNodes (D:\_Dev\_vl-libs\VL.FastNoiseLite\vl)">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessNode" Name="FastNoiseLite" />
+            </p:NodeReference>
+            <Pin Id="RxDSAj9Wn9tLCbVPCdzMou" Name="Color" Kind="InputPin" />
+            <Pin Id="C42z8xvFJUdP0zN9GyuwU1" Name="Output Size" Kind="InputPin" />
+            <Pin Id="KFKINDaGtd6LGsViaiYIXQ" Name="Output Format" Kind="InputPin" IsHidden="true" />
+            <Pin Id="VdwVc8IoxNeNDjZ7cdo9Lr" Name="Render Format" Kind="InputPin" IsHidden="true" />
+            <Pin Id="BlRuF5SpYD4NGyzxu6jvls" Name="Output Texture" Kind="InputPin" IsHidden="true" />
+            <Pin Id="PMDdBNaSGxgOqofP08gzW6" Name="Enabled" Kind="InputPin" />
+            <Pin Id="BkSua7n7RV4OnSC2J9vDAI" Name="Output" Kind="OutputPin" />
+          </Node>
+        </Canvas>
         <Patch Id="DBYmxfeIOlcLboDdIT5h0Z" Name="Create" />
         <Patch Id="DogxJckKCZBOH8kuk619TC" Name="Update" />
         <ProcessDefinition Id="Tj3xex7K12gLJd6jX9L1AG">
@@ -24,4 +38,5 @@
     </Node>
   </Patch>
   <NugetDependency Id="Ko9OqCOVyY7Pz8mbJrOqb0" Location="VL.CoreLib" Version="2023.5.3-0423-gee17475a3a" />
+  <NugetDependency Id="QmDf0pV6owpM9RJrWcXtYV" Location="VL.Stride" Version="2023.5.3-0423-gee17475a3a" />
 </Document>
