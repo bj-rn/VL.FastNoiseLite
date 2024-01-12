@@ -106,10 +106,10 @@ namespace FastNoiseLite
 
     public enum DomainWarpType
     {
-        None, //  added that for convenience. b
-        OpenSimplex2,
-        OpenSimplex2Reduced,
-        BasicGrid
+        None = 4444, //  added that for convenience. b
+        OpenSimplex2 = 0,
+        OpenSimplex2Reduced = 1,
+        BasicGrid = 2
     };
 
     public class FastNoiseLite
