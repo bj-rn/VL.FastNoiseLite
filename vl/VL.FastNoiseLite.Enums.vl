@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="EWHWcwf3oBvPnhn254YyBa" LanguageVersion="2023.5.3-0437-g18ca83680e" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="SBZ7wCyG1qaMf6ZwkFxHbb" LanguageVersion="2023.5.3-0437-g18ca83680e" Version="0.128">
   <Patch Id="Rgz0iK0cdl5O6XLZAnSI2k">
     <Canvas Id="EtMz6eWyJpjMOVOROl6714" DefaultCategory="FastNoiseLite" CanvasType="FullCategory">
       <!--
@@ -52,8 +52,36 @@
           <Choice Kind="TypeFlag" Name="DomainWarpType" />
         </p:TypeAnnotation>
         <Patch Id="DkgU5vnAzPRLErMzEb67Mo">
-          <Canvas Id="Or2YwjSOjejMDrVS5HhXX7" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="R4ORt1ojJGvOzAaU7zpULc" IsHidden="true" />
+          <Canvas Id="Or2YwjSOjejMDrVS5HhXX7" CanvasType="Group">
+            <!--
+
+    ************************ CreateDefault ************************
+
+-->
+            <Node Name="CreateDefault" Bounds="113,130,175,81" Id="MKbDSRF0pdOMyHR6pgXlx1">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="OperationDefinition" Name="Operation" />
+              </p:NodeReference>
+              <Patch Id="TT5XXZx1XvIOLEOBqaHDLN">
+                <ControlPoint Id="JP3EP5BHjmKPRm0qTGWb3e" Bounds="130,194" />
+                <Link Id="Q9wPZ0C1oxWOCz7NuHWVqw" Ids="JP3EP5BHjmKPRm0qTGWb3e,VPAm8UQhKwHN5DtdXUZxcz" IsHidden="true" />
+                <Pin Id="VPAm8UQhKwHN5DtdXUZxcz" Name="Output" Kind="OutputPin">
+                  <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.Enums.vl">
+                    <Choice Kind="TypeFlag" Name="DomainWarpType" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pad Id="NKbYOffTvCTNXrDYx43j0Q" Comment="" Bounds="129,158,128,15" ShowValueBox="true" isIOBox="true" Value="None">
+                  <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.Enums.vl">
+                    <Choice Kind="TypeFlag" Name="DomainWarpType" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Link Id="Fpkcn0YLEP0ObRQfrQnCDk" Ids="NKbYOffTvCTNXrDYx43j0Q,JP3EP5BHjmKPRm0qTGWb3e" />
+              </Patch>
+            </Node>
+          </Canvas>
+          <ProcessDefinition Id="R4ORt1ojJGvOzAaU7zpULc" IsHidden="true">
+            <Fragment Id="CVgcdvpYOtBN3Hm4tClAEe" Patch="MKbDSRF0pdOMyHR6pgXlx1" Enabled="true" />
+          </ProcessDefinition>
         </Patch>
       </Node>
       <!--
