@@ -1,0 +1,124 @@
+[TextureSource]
+[Category("Source")]
+[Summary("")]
+shader FastNoiseLite_TextureFX : TextureFX, FastNoiseLite
+{
+
+    [Default(4, 4)]
+    compose ComputeFloat2 Scale;
+
+    [Default(0, 0)]
+    compose ComputeFloat2 Offset;
+
+    [Default(1)]
+    compose ComputeFloat Z;
+
+    int Seed = 4444;
+
+    [EnumType("FastNoiseLite.NoiseType, FastNoiseLite")]
+    uint NoiseType = 2;
+
+    [EnumType("FastNoiseLite.RotationType3D, FastNoiseLite")]
+    uint RotationType3D = 0;
+
+    [Default(2)]
+    compose ComputeFloat Frequency;
+
+    [EnumType("FastNoiseLite.GeneralFractalType, FastNoiseLite")]
+    uint FractalType = 0;
+
+    int FractalOctaves = 3;
+
+    [Default(2)]
+    compose ComputeFloat FractalLacunarity;
+
+    [Default(0.5)]
+    compose ComputeFloat FractalGain;
+
+    [Default(0.0)]
+    compose ComputeFloat FractalWeightedStrength;
+
+    [Default(0.0)]
+    compose ComputeFloat FractalPingPongStrength;
+
+    [EnumType("FastNoiseLite.CellularDistanceFunction, FastNoiseLite")]
+    uint CellularDistanceFunction = 0;
+
+    [EnumType("FastNoiseLite.CellularReturnType, FastNoiseLite")]
+    uint CellularReturnType = 0;
+
+    [Default(1.0)]
+    compose ComputeFloat CellularJitter;
+
+    int DomainWarpSeed = 1337;
+
+    [EnumType("FastNoiseLite.DomainWarpType, FastNoiseLite")]
+    uint DomainWarpType = 4444;
+
+    [Default(1.0)]
+    compose ComputeFloat DomainWarpAmplitude;
+
+    [Default(2)]
+    compose ComputeFloat DomainWarpFrequency;
+
+    [EnumType("FastNoiseLite.DomainWarpFractalType, FastNoiseLite")]
+    uint DomainWarpFractalType = 0;
+
+    int DomainWarpFractalOctaves = 3;
+
+    [Default(2)]
+    compose ComputeFloat DomainWarpFractalLacunarity;
+
+    [Default(0.5)]
+    compose ComputeFloat DomainWarpFractalGain;
+
+    stage override float4 Shading()
+    {
+        
+        float2 uv = (streams.TexCoord + Offset.Compute()) * Scale.Compute();
+        float x = uv.x;
+        float y = uv.y;
+            
+        float z = Z.Compute();
+        
+        fnl_state state = fnlCreateState(Seed);
+        
+        //state.noise_type = NoiseType;
+        //state.rotation_type_3d = RotationType3D;
+        state.frequency = Frequency.Compute();
+
+        state.fractal_type = FractalType;
+        state.octaves = FractalOctaves;
+        state.lacunarity = FractalLacunarity.Compute();
+        state.gain = FractalGain.Compute();
+        state.weighted_strength = FractalWeightedStrength.Compute();
+        state.ping_pong_strength = FractalPingPongStrength.Compute();
+
+        state.cellular_distance_func = CellularDistanceFunction;
+        state.cellular_return_type =  CellularReturnType;
+        state.cellular_jitter_mod = CellularJitter.Compute();
+
+
+
+        fnl_state warpstate = fnlCreateState(DomainWarpSeed);
+        
+        warpstate.domain_warp_type = DomainWarpType;
+        warpstate.domain_warp_amp = DomainWarpAmplitude.Compute();
+        warpstate.frequency = DomainWarpFrequency.Compute();
+        warpstate.octaves = DomainWarpFractalOctaves;
+        warpstate.lacunarity = DomainWarpFractalLacunarity.Compute();
+        warpstate.gain = DomainWarpFractalGain.Compute();
+
+
+         if (DomainWarpType != 4444)
+         {
+            fnlDomainWarp3D(warpstate, x, y, z);
+         }
+
+         float noise = fnlGetNoise3D(state, x, z, y); // / 2.f + 0.5f;
+	
+         return float4(noise, noise, noise, 1.0f);
+
+        //return Color;
+    }
+};
