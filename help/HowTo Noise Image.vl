@@ -119,11 +119,6 @@
               <Choice Kind="TypeFlag" Name="NoiseType" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="RgmtcMAEJiHQSqcaQeTLBV" Comment="Fractal Type" Bounds="226,160,138,15" ShowValueBox="true" isIOBox="true" Value="Ridged">
-            <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.Enums.vl">
-              <Choice Kind="TypeFlag" Name="FractalType" />
-            </p:TypeAnnotation>
-          </Pad>
           <Node Bounds="260,341,312,396" Id="FOzg58PbroNQMRFPDgXZiQ">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -237,6 +232,11 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="PoQyWQdJ3JzOL5ZZY5RwbF" Comment="Fractal Type" Bounds="226,152,65,15" ShowValueBox="true" isIOBox="true" Value="Ridged">
+            <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.Skia.vl">
+              <Choice Kind="TypeFlag" Name="GeneralFractalType" />
+            </p:TypeAnnotation>
+          </Pad>
         </Canvas>
         <Patch Id="FFail4rIwgcOKCanLdaurN" Name="Create" />
         <Patch Id="UoFVOle4f20Pw26SGdiub3" Name="Update" />
@@ -249,7 +249,6 @@
         <Link Id="Uz5DsCMlcEIMEauAyyW64l" Ids="CWTv1ju9jSILe5AwYVM0Ex,Ex14xz9SL5vQSch8YrYn4Q" />
         <Link Id="B2vmA9qOIjgOxA2O3Oa6SA" Ids="QKFBK0Nb6UMPRyw5Cdzpfi,BN1LhlzU6f0Ovtp3rVlrvk" />
         <Link Id="QwTsjTINcNyP3TfjzlUpgS" Ids="KsA2OJsOzYCMaVVfUIrlT4,KuOQqPS537uOltxqLiMSSU" />
-        <Link Id="QDUi6p8WJoENAy18Zwo81R" Ids="RgmtcMAEJiHQSqcaQeTLBV,NrKUgTCjwYUQV4pWeqnLAc" />
         <Link Id="AaRITPhFtcIOrLb9DwcKEK" Ids="SqCiCk7fxcBLdpQQ19J5z0,Uxfz5g32RjPMlzGOYq5qyk" />
         <Link Id="L3CigpyDAN2NCp2Nu0852a" Ids="IxEGEebv6DtM0LtrvRzssx,HMYo0KAucSuQPGKJRsR07r" />
         <Link Id="RB0uvxTQT0aLFWR2fqeNZV" Ids="CWTv1ju9jSILe5AwYVM0Ex,Nf9SBN6EdsPO4AhFIZFCxq" />
@@ -266,6 +265,7 @@
         <Link Id="L4WmHBqOv0fPx1jlVuiAUv" Ids="RvMSkoZOANAOv2La30ljlj,EOtJYYFXjPFLgaTIMCIsjn" />
         <Link Id="Cjc2ilipY2ZOzwA1jarmNa" Ids="R7eGHY5jBpbLlMgXQa5ksB,IltQTJnsXd6O44xMQHTpYY" />
         <Link Id="NZRRniYmFYTP9nv4d8XxKw" Ids="IltQTJnsXd6O44xMQHTpYY,NJeZJRNN4SAQJrrXy68M8K,JRpKnlU7dNoPOT6osMOAFY" />
+        <Link Id="Mgi9O8YKCz5MAsI3vEmSkX" Ids="PoQyWQdJ3JzOL5ZZY5RwbF,NrKUgTCjwYUQV4pWeqnLAc" />
       </Patch>
     </Node>
   </Patch>
