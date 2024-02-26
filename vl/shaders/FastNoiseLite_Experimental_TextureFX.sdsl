@@ -1,7 +1,7 @@
 [TextureSource]
 [Category("Source")]
 [Summary("")]
-shader FastNoiseLite_TextureFX : TextureFX, FastNoiseLite
+shader FastNoiseLite_Experimental_TextureFX : TextureFX, FastNoiseLite
 {
 
     [Default(4, 4)]
@@ -16,7 +16,7 @@ shader FastNoiseLite_TextureFX : TextureFX, FastNoiseLite
     int Seed = 4444;
 
     [EnumType("FastNoiseLite.NoiseType, FastNoiseLite")]
-    uint NoiseType = 2;
+    uint NoiseType = 1;
 
     [EnumType("FastNoiseLite.RotationType3D, FastNoiseLite")]
     uint RotationType3D = 0;
@@ -83,8 +83,12 @@ shader FastNoiseLite_TextureFX : TextureFX, FastNoiseLite
         
         fnl_state state = fnlCreateState(Seed);
         
-        //state.noise_type = NoiseType;
-        //state.rotation_type_3d = RotationType3D;
+        // As soon as this gets set via the NoiseType input it results in a shader compiler error: "internal error: no storage type for block output".
+        // see also https://github.com/Auburn/FastNoiseLite/issues/54. The solution proposed there unfortunately doesn't make a difference.
+        // state.noise_type = NoiseType;
+        state.noise_type = 0;
+
+        state.rotation_type_3d = RotationType3D;
         state.frequency = Frequency.Compute();
 
         state.fractal_type = FractalType;
