@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="HpjKSawvNyzLpPihnIKENX" LanguageVersion="2024.6.0-0179-g427422701e" Version="0.128">
+  <Patch Id="Rgz0iK0cdl5O6XLZAnSI2k">
+    <Canvas Id="EtMz6eWyJpjMOVOROl6714" DefaultCategory="FastNoiseLite" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="GzS10oTkIGnMGZknNaV2y2">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="PbUNtDBhKLVPbHQvb8Ta2L">
+        <Canvas Id="QOaMfDZHJrCLJ8x5mM6Dq2" CanvasType="Group">
+          <Node Bounds="61,543,225,19" Id="CJ4ngCyRrsZOpMKbKLZQRu">
+            <p:NodeReference LastCategoryFullName="Stride.Textures" LastDependency="VL.Stride.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="TextureWindow" />
+            </p:NodeReference>
+            <Pin Id="SXxQ2UTbRnzOrstzLlP3LB" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="D9qnndVgzS3OH8h5OhmrVF" Name="Bounds" Kind="InputPin" DefaultValue="1380.6666, 100, 682.6667, 682.6667" />
+            <Pin Id="JuHEfxvZWE0QdZkNiq4irq" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
+            <Pin Id="TJizFR2S6k4LuNn5TuSH2g" Name="Back Buffer Format" Kind="InputPin" IsHidden="true" />
+            <Pin Id="SQqVVfhBtLEQcLh8UL3fIf" Name="Bound to Document" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="MGVrbuW6A6vPjhS6C54o8E" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
+            <Pin Id="DrhkWHA0pPBNpQs8Ab4vKZ" Name="Input" Kind="InputPin" />
+            <Pin Id="U9HCpSO8V1lPwQhCMAEcBL" Name="Title" Kind="InputPin" DefaultValue="FastNoiseLight GPU" />
+            <Pin Id="EnejnECVULaMETMJyDo8MK" Name="Clear Color" Kind="InputPin" />
+            <Pin Id="U2Si4DvSf9MNvCqGw63Upj" Name="Clear" Kind="InputPin" />
+            <Pin Id="COcsnKhh6spLOpFC4cJMrM" Name="Is Premultiplied Alpha" Kind="InputPin" />
+            <Pin Id="O7QlzYkdHW7LQ73HPTUlaN" Name="Scaling Mode" Kind="InputPin" />
+            <Pin Id="ToYlPPL1sZaNW5bHgFkxBu" Name="Enable Keyboard Shortcuts" Kind="InputPin" />
+            <Pin Id="C27F9L1g78gNExbOo7w9Ha" Name="Enabled" Kind="InputPin" />
+            <Pin Id="VWR2dqCANYkNDQcPlNXUHN" Name="Show Info String" Kind="InputPin" />
+            <Pin Id="LPUDybkgm07Poh37RB9Nth" Name="Present Interval" Kind="InputPin" />
+            <Pin Id="KD7h9HjMSRsN4KNlxIpvs3" Name="Output" Kind="OutputPin" />
+            <Pin Id="GaFOLmuRpFUPu4J9L5OU38" Name="Client Bounds" Kind="OutputPin" />
+            <Pin Id="PrKJB89IDBmPkXtiKkNZwz" Name="Input Source" Kind="OutputPin" />
+            <Pin Id="D96l4hpEwsMMZul33RpzXS" Name="Back Buffer" Kind="OutputPin" IsHidden="true" />
+          </Node>
+          <Node Bounds="101,443,525,19" Id="DPCPUKGVFA9P1auqAFHFR0">
+            <p:NodeReference LastCategoryFullName="Stride.Textures.Source" LastDependency="VL.FastNoiseLite.GPU.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessNode" Name="FastNoiseLite" />
+            </p:NodeReference>
+            <Pin Id="U64P6wyJ3jZP66KPr0aNM0" Name="Seed" Kind="InputPin" DefaultValue="4525" />
+            <Pin Id="AlvebwN1pTjPsRFXJgK0zi" Name="Noise Type" Kind="InputPin" />
+            <Pin Id="I84PEEhHJ22PbP3QsfsZwN" Name="Rotation Type 3D" Kind="InputPin" />
+            <Pin Id="OY3LlZSLDcEQCI28xtlhVZ" Name="Fractal Type" Kind="InputPin" />
+            <Pin Id="LRdkfPrRo0ELPqRVQoWu83" Name="Fractal Octaves" Kind="InputPin" />
+            <Pin Id="G6I9mklrvEaNc83bpznSVC" Name="Cellular Distance Function" Kind="InputPin" />
+            <Pin Id="EUVzr1A8zsVOv7l6r62x98" Name="Cellular Return Type" Kind="InputPin" />
+            <Pin Id="NzuwPL96DL4LlV7jk3IfKW" Name="Domain Warp Seed" Kind="InputPin" />
+            <Pin Id="Nfm49sPCdZfMRonWV4ZTh2" Name="Domain Warp Type" Kind="InputPin" />
+            <Pin Id="HxSvftnqCrTNsEC18GHNvL" Name="Domain Warp Fractal Type" Kind="InputPin" />
+            <Pin Id="KBXSo0VOVv4OEQQEhNwTfZ" Name="Domain Warp Fractal Octaves" Kind="InputPin" />
+            <Pin Id="UwrpqinJpf1QW3DbFvRNKu" Name="Scale" Kind="InputPin" />
+            <Pin Id="HYlVpPxauFyO8VV4xXKvLn" Name="Offset" Kind="InputPin" />
+            <Pin Id="JEulzNPO4JUPE7YCg84MKo" Name="Z" Kind="InputPin" />
+            <Pin Id="VFNiltl7QgoOs5CRmJaPYf" Name="Frequency" Kind="InputPin" />
+            <Pin Id="AG4QcXhXZaaL8mBKEXWXs6" Name="Fractal Lacunarity" Kind="InputPin" />
+            <Pin Id="K6EFRVQ6SHANxbn05RE7qj" Name="Fractal Gain" Kind="InputPin" />
+            <Pin Id="PUGxdUXdMJnQJIA82aUVKM" Name="Fractal Weighted Strength" Kind="InputPin" />
+            <Pin Id="ESYQCDkxMVsPS3luaXWTPp" Name="Fractal Ping Pong Strength" Kind="InputPin" />
+            <Pin Id="NgKnJ5u9WWFQblBWxh8J20" Name="Cellular Jitter" Kind="InputPin" />
+            <Pin Id="A7do4IySutYOyGZNT8nd4B" Name="Domain Warp Amplitude" Kind="InputPin" />
+            <Pin Id="KMGE6leXdgHPUliAGlONkd" Name="Domain Warp Frequency" Kind="InputPin" />
+            <Pin Id="R53h3xlgnuSOjO2q1HALqS" Name="Domain Warp Fractal Lacunarity" Kind="InputPin" />
+            <Pin Id="L0Va8y0Blb1NQC5Zz2IDDb" Name="Domain Warp Fractal Gain" Kind="InputPin" />
+            <Pin Id="PgwiVkQcBmtNvK2exsIIzr" Name="Output Size" Kind="InputPin" />
+            <Pin Id="MSqk0M24DdONvtUYQ2HIqw" Name="Output Format" Kind="InputPin" IsHidden="true" />
+            <Pin Id="SNifn5lZft6NYeVtpEd4Z8" Name="Render Format" Kind="InputPin" IsHidden="true" />
+            <Pin Id="QRbmJefpqrPN7KkS3mODte" Name="Output Texture" Kind="InputPin" IsHidden="true" />
+            <Pin Id="MvtzaYXHl3qO76NXVAVLmr" Name="Enabled" Kind="InputPin" />
+            <Pin Id="TpVWQNJg5ajNPcYHgBLHxm" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="VB4Ff3o9GAyMJKUdZVRcIL" Comment="Output Size" Bounds="603,384,35,28" ShowValueBox="true" isIOBox="true" Value="1024, 1024">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Int2" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="QkrP2zRT92pPwRknCoR8fk" Comment="Scale" Bounds="334,302,35,28" ShowValueBox="true" isIOBox="true" Value="1.94, 1.94">
+            <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Vector2" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="GlEdQTwf2Z3N39puZERWeB" Comment="Noise Type" Bounds="123,136,94,15" ShowValueBox="true" isIOBox="true" Value="Cellular">
+            <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.Enums.vl">
+              <Choice Kind="TypeFlag" Name="NoiseType" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="EZN7nuvgVCCPJwIPkvJoLh" Comment="Fractal Type" Bounds="166,172,65,15" ShowValueBox="true" isIOBox="true" Value="FBm">
+            <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.Enums.vl">
+              <Choice Kind="TypeFlag" Name="GeneralFractalType" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Sfeb3pQlJJEMk7J8rFt2ai" Comment="Fractal Octaves" Bounds="187,199,35,15" ShowValueBox="true" isIOBox="true" Value="8">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="OvgwNI9qno5M5EZseMQNJF" Comment="Offset" Bounds="354,345,35,28" ShowValueBox="true" isIOBox="true" Value="0.18, 0.18">
+            <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Vector2" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="LcgiUs26hbmOlvhJipceiI" Comment="Z" Bounds="374,385,35,15" ShowValueBox="true" isIOBox="true" Value="6.89">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="OhrcqWEHw0pO2F3QaWfR4s" Comment="Domain Warp Fractal Type" Bounds="292,253,138,15" ShowValueBox="true" isIOBox="true" Value="DomainWarpIndependent">
+            <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.Enums.vl">
+              <Choice Kind="TypeFlag" Name="DomainWarpFractalType" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="CijYrjwenmGL4sRNSIaY90" Comment="Domain Warp Amplitude" Bounds="519,284,35,15" ShowValueBox="true" isIOBox="true" Value="4.58">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="LgSsDPgmYAxPhfNwyS9ZE1" Comment="Domain Warp Frequency" Bounds="540,321,35,15" ShowValueBox="true" isIOBox="true" Value="3.99">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="EXZcVpz3p54P7IxP4VtaKS" Comment="Domain Warp Fractal Lacunarity" Bounds="561,356,35,15" ShowValueBox="true" isIOBox="true" Value="0.28">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="DfubULILoODL1mO7AbmFdQ" Comment="Domain Warp Type" Bounds="271,227,128,15" ShowValueBox="true" isIOBox="true" Value="OpenSimplex2Reduced">
+            <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.Enums.vl">
+              <Choice Kind="TypeFlag" Name="DomainWarpType" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="LQRtsNdVYxFPYrXRQZeACs" Comment="Seed" Bounds="102,100,35,15" ShowValueBox="true" isIOBox="true" Value="4525">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+        </Canvas>
+        <Patch Id="DBYmxfeIOlcLboDdIT5h0Z" Name="Create" />
+        <Patch Id="DogxJckKCZBOH8kuk619TC" Name="Update" />
+        <ProcessDefinition Id="Tj3xex7K12gLJd6jX9L1AG">
+          <Fragment Id="EyvBKHDCCxfLfKfYFfCAen" Patch="DBYmxfeIOlcLboDdIT5h0Z" Enabled="true" />
+          <Fragment Id="D3Clk786tbBPenDaPo3VHE" Patch="DogxJckKCZBOH8kuk619TC" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="Vqrj6sFwWTLMPgfEOJDzrv" Ids="TpVWQNJg5ajNPcYHgBLHxm,DrhkWHA0pPBNpQs8Ab4vKZ" />
+        <Link Id="Tn2nlJ5bazyMa6bSpDvkXZ" Ids="VB4Ff3o9GAyMJKUdZVRcIL,PgwiVkQcBmtNvK2exsIIzr" />
+        <Link Id="Gf9wskzqGohN2I3cPGNu8K" Ids="QkrP2zRT92pPwRknCoR8fk,UwrpqinJpf1QW3DbFvRNKu" />
+        <Link Id="IyhvIHYbPPoP1uFFuJXvtU" Ids="GlEdQTwf2Z3N39puZERWeB,AlvebwN1pTjPsRFXJgK0zi" />
+        <Link Id="Bl2qioiiYaOOy1lTGlf29y" Ids="EZN7nuvgVCCPJwIPkvJoLh,OY3LlZSLDcEQCI28xtlhVZ" />
+        <Link Id="Oax1VHeXdHbPvohjDDm6lP" Ids="Sfeb3pQlJJEMk7J8rFt2ai,LRdkfPrRo0ELPqRVQoWu83" />
+        <Link Id="KsHtGDByo3uP0dxdtA4V1I" Ids="OvgwNI9qno5M5EZseMQNJF,HYlVpPxauFyO8VV4xXKvLn" />
+        <Link Id="FubP4neHEMONSK6XTogFAj" Ids="LcgiUs26hbmOlvhJipceiI,JEulzNPO4JUPE7YCg84MKo" />
+        <Link Id="SIZvsuLZ8wNLUbZWvtmyFD" Ids="OhrcqWEHw0pO2F3QaWfR4s,HxSvftnqCrTNsEC18GHNvL" />
+        <Link Id="KHSx0wMaAHsMD7UvRyvqRF" Ids="CijYrjwenmGL4sRNSIaY90,A7do4IySutYOyGZNT8nd4B" />
+        <Link Id="TObDrgMPu6BOF1FV9CxF7v" Ids="LgSsDPgmYAxPhfNwyS9ZE1,KMGE6leXdgHPUliAGlONkd" />
+        <Link Id="RZzNQIh6SqVOz4AKTKIde0" Ids="EXZcVpz3p54P7IxP4VtaKS,R53h3xlgnuSOjO2q1HALqS" />
+        <Link Id="TInuOWqP573NL9eDXAZRUF" Ids="DfubULILoODL1mO7AbmFdQ,Nfm49sPCdZfMRonWV4ZTh2" />
+        <Link Id="GqmxDI8IwLbOBBvL56o51G" Ids="LQRtsNdVYxFPYrXRQZeACs,U64P6wyJ3jZP66KPr0aNM0" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="Ko9OqCOVyY7Pz8mbJrOqb0" Location="VL.CoreLib" Version="2024.6.0-0179-g427422701e" />
+  <NugetDependency Id="QmDf0pV6owpM9RJrWcXtYV" Location="VL.Stride" Version="2024.6.0-0179-g427422701e" />
+  <NugetDependency Id="P9Qf9AtaOiWP3KOu24OMxE" Location="VL.Stride.TextureFX" Version="2024.6.0-0179-g427422701e" />
+  <DocumentDependency Id="Ky9hZ3P9oTkMameNREazNe" Location="../vl/VL.FastNoiseLite.Enums.vl" />
+  <DocumentDependency Id="CVw4fXv2QDqNnSkidOHWRM" Location="../vl/VL.FastNoiseLite.GPU.vl" />
+</Document>
