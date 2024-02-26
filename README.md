@@ -1,4 +1,4 @@
-# VL.FatNoiseLite
+# VL.FastNoiseLite
 A VL wrapper for [FastNoiseLite](https://github.com/Auburn/FastNoiseLite) a noise generation library with a large selection of noise algorithms. It's heavily inspired by [VL.FastNoise](https://github.com/artrevinho/VL.FastNoise) by [Alvaro Treviño](https://github.com/artrevinho).
 
 Try it with vvvv, the visual live-programming environment for .NET  
