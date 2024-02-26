@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="GvynCVwY4gJLfyffCkm2CG" LanguageVersion="2023.5.3-0437-g18ca83680e" Version="0.128">
-  <NugetDependency Id="KQRMT2y0Qe9PbZXEEBDNo8" Location="VL.CoreLib" Version="2023.5.3-0437-g18ca83680e" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="GvynCVwY4gJLfyffCkm2CG" LanguageVersion="2024.6.0-0179-g427422701e" Version="0.128">
+  <NugetDependency Id="KQRMT2y0Qe9PbZXEEBDNo8" Location="VL.CoreLib" Version="2024.6.0-0179-g427422701e" />
   <Patch Id="AT2F5od2tftQCWtBLHrw7A">
     <Canvas Id="JPxTfRIvlS0MsiGdr6X6tb" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -68,7 +68,7 @@
             <Pin Id="UD2JDB6gntFNjZUxnf73rJ" Name="Y" Kind="InputPin" DefaultValue="0.57" />
             <Pin Id="KIabxMpZGRKNu1pfaZh5lD" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="534,785,45,19" Id="VSSN0hySEuiQcoVHSM1uY3">
+          <Node Bounds="534,785,48,19" Id="VSSN0hySEuiQcoVHSM1uY3">
             <p:NodeReference LastCategoryFullName="Animation" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LFO" />
@@ -101,6 +101,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="FastNoiseLite (2D Spectral)" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="VUtxt0JQ3dONK2GbgcsnGe" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="MaxD1lGkoaAOBna6gRKClY" Name="Input" Kind="InputPin" />
             <Pin Id="IfqdNBbRbMqPHmnCq8P5mT" Name="Offset" Kind="InputPin" />
@@ -256,7 +257,7 @@
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
             <Pin Id="MzAYaYpJQRnLOX6cXhF5AA" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="U3koNsCNIbsQYKyLeOEF9k" Name="Bounds" Kind="InputPin" DefaultValue="1296.6666, 40.666668, 341.33334, 341.33334" IsHidden="true" />
+            <Pin Id="U3koNsCNIbsQYKyLeOEF9k" Name="Bounds" Kind="InputPin" DefaultValue="1381.3334, 103.333336, 341.33334, 341.33334" IsHidden="true" />
             <Pin Id="KvRaMCdButoPddibjXb2YO" Name="Bound to Document" Kind="InputPin" DefaultValue="True" />
             <Pin Id="K4gp7G2J3LlL3PLw1musjI" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
             <Pin Id="SE8p8E6HKPTMLrwLX5ZyCM" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
@@ -271,6 +272,7 @@
             <Pin Id="RMIMpK8b1jVOlYkw9peiIG" Name="Post Effects" Kind="InputPin" />
             <Pin Id="MK98eHPJaS3NHMrrCnj5SU" Name="Enable Default Post Effects" Kind="InputPin" />
             <Pin Id="HuMo7is6NnwL4LLpaUlGkA" Name="Render Group Mask" Kind="InputPin" IsHidden="true" />
+            <Pin Id="VF7i61By0Q4O2Tp5GhyM20" Name="Commands" Kind="InputPin" IsHidden="true" />
             <Pin Id="OFXo5zOWVDwM9pv1WRGbMO" Name="Enable Keyboard Shortcuts" Kind="InputPin" />
             <Pin Id="ItuNCKyqXmsMx7Ghw2CtAu" Name="Model Effect Name" Kind="InputPin" IsHidden="true" />
             <Pin Id="V67hLVlgIVgOMPYy4e3Sjl" Name="Additional Scene Renderers" Kind="InputPin" IsHidden="true" />
@@ -334,7 +336,6 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="InstancingSpreadComponent" />
             </p:NodeReference>
-            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">Low</p:HelpFocus>
             <Pin Id="NLPBnlZutHpOoorYJUwrHq" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Bcx2WuEU9ILLvZWWC3dc4k" Name="Instance Transformations" Kind="InputPin" />
             <Pin Id="UONkd1ySXLSLawK00ghizX" Name="Instance Count" Kind="InputPin" />
@@ -616,6 +617,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="FastNoiseLite (3D Spectral)" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="JYA9MBVMGLzNvARfVWgTBF" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="DzNWOejj3KsOFWDlnPabVq" Name="Input" Kind="InputPin" />
             <Pin Id="H6z64APLZNrOm2WxYc2Qqq" Name="Offset" Kind="InputPin" />
@@ -763,7 +765,7 @@
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
             <Pin Id="TmC9hjXhDrFQbtjrAMew2S" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="NP1TJGQAEBAOAzSD4Pt9LT" Name="Bounds" Kind="InputPin" IsHidden="true" />
+            <Pin Id="NP1TJGQAEBAOAzSD4Pt9LT" Name="Bounds" Kind="InputPin" DefaultValue="1384, 478.66666, 786, 432" IsHidden="true" />
             <Pin Id="IJ0QkDFfTc3QU23kgPq0hU" Name="Bound to Document" Kind="InputPin" DefaultValue="True" />
             <Pin Id="GqvwIBUxBbfLM31FUO5Dnc" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
             <Pin Id="CL69UMEdwl5NX0wNavWYaH" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
@@ -778,6 +780,7 @@
             <Pin Id="PmeojjFFIKwNeO8UJrF5S2" Name="Post Effects" Kind="InputPin" />
             <Pin Id="ESKR4AnRhmhOpdVazvEArh" Name="Enable Default Post Effects" Kind="InputPin" />
             <Pin Id="JKD4Wnkd2i6MfE5pABpKMB" Name="Render Group Mask" Kind="InputPin" IsHidden="true" />
+            <Pin Id="GOQz8AGUi3mK9l20abOd3s" Name="Commands" Kind="InputPin" IsHidden="true" />
             <Pin Id="NVHIhrQIaVpQDQg26YIDRq" Name="Enable Keyboard Shortcuts" Kind="InputPin" />
             <Pin Id="CF1frl0x1AbLqB3hw2aXgg" Name="Model Effect Name" Kind="InputPin" IsHidden="true" />
             <Pin Id="UB17jAxqvzqPpVj1HvjPUU" Name="Additional Scene Renderers" Kind="InputPin" IsHidden="true" />
@@ -828,7 +831,6 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="InstancingSpreadComponent" />
             </p:NodeReference>
-            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">Low</p:HelpFocus>
             <Pin Id="KUdmyQo7hfhMmrpsKdWCyA" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="MJiDMW452UjOZCFzjHW5Fo" Name="Instance Transformations" Kind="InputPin" />
             <Pin Id="DfXf9zNQKBtMy0p7O7y3oY" Name="Instance Count" Kind="InputPin" />
@@ -903,7 +905,7 @@
                 </Pin>
                 <Pin Id="N1fl8XKhSgHOOYHZigfQQ9" Name="Output" Kind="OutputPin" />
               </Node>
-              <Node Bounds="489,3380,81,19" Id="ADvJb4QUj6TLFD567jxmAJ">
+              <Node Bounds="461,3371,81,19" Id="ADvJb4QUj6TLFD567jxmAJ">
                 <p:NodeReference LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="FromSpherical" />
@@ -934,7 +936,7 @@
                 <Pin Id="UKnnETOPKXLLy6Wj1JLPmC" Name="Scaling" Kind="InputPin" />
                 <Pin Id="GgXE3rRfb3ZMn52f1GGvkK" Name="Output" Kind="OutputPin" />
               </Node>
-              <Node Bounds="490,3331,80,19" Id="AK7wbxI2nJKPTnVo9o3m7s">
+              <Node Bounds="462,3322,80,19" Id="AK7wbxI2nJKPTnVo9o3m7s">
                 <p:NodeReference LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="ToSpherical" />
@@ -1192,5 +1194,5 @@
     </Node>
   </Patch>
   <DocumentDependency Id="SlzGvmt2boEQCRopVxdbeu" Location="../vl/VL.FastNoiseLite.CPU.vl" />
-  <NugetDependency Id="CJbNqMrKTAeLaxSmh9t9js" Location="VL.Stride" Version="2023.5.3-0437-g18ca83680e" />
+  <NugetDependency Id="CJbNqMrKTAeLaxSmh9t9js" Location="VL.Stride" Version="2024.6.0-0179-g427422701e" />
 </Document>

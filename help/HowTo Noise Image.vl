@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Oe7V9lgEtjZO5TY9yybdWx" LanguageVersion="2023.5.3-0437-g18ca83680e" Version="0.128">
-  <NugetDependency Id="Lh57X0iFXuRMDfqimnBz4j" Location="VL.CoreLib" Version="2023.5.3-0437-g18ca83680e" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Oe7V9lgEtjZO5TY9yybdWx" LanguageVersion="2024.6.0-0179-g427422701e" Version="0.128">
+  <NugetDependency Id="Lh57X0iFXuRMDfqimnBz4j" Location="VL.CoreLib" Version="2024.6.0-0179-g427422701e" />
   <Patch Id="RjdVo8S6vRjLYdXJblkQLE">
     <Canvas Id="UlAalzjZJDaOJa5wiBjDuh" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -20,6 +20,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="FastNoiseLite" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="GfVVvmbgxBRLiSeBwUTluF" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="KuOQqPS537uOltxqLiMSSU" Name="Noise Type" Kind="InputPin" />
             <Pin Id="KUzp53Ua3IwOQGGpUDa7uS" Name="Seed" Kind="InputPin" />
@@ -55,7 +56,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="I1TN9NBgziWOlLktHxaVZ0" Name="Bounds" Kind="InputPin" DefaultValue="1168, 60, 672, 504">
+            <Pin Id="I1TN9NBgziWOlLktHxaVZ0" Name="Bounds" Kind="InputPin" DefaultValue="1374, 72, 481, 504">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastDependency="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -70,6 +71,7 @@
             <Pin Id="RkYt1N4b2n9LLpVPvMOE7q" Name="Space" Kind="InputPin" />
             <Pin Id="L6hSTRZzL77QGVNtIw7gcc" Name="Show Cursor" Kind="InputPin" />
             <Pin Id="FIQRIsHoAIuOtEnrkuUujR" Name="VSync" Kind="InputPin" />
+            <Pin Id="G31SjlNTi3ZNtxPgvOeUVd" Name="Commands" Kind="InputPin" IsHidden="true" />
             <Pin Id="PJcAy2u9P7NQOs4MYkXJ8i" Name="Enable Keyboard Shortcuts" Kind="InputPin" IsHidden="true" />
             <Pin Id="VrbmreccGmcP2NP5tRb4ot" Name="Enabled" Kind="InputPin" />
             <Pin Id="PpwaDIH8qqmN0XfVA5zdWh" Name="Form Bounds Notifications" Kind="OutputPin" IsHidden="true" />
@@ -269,6 +271,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Kl3sm8qFRjOLd8DHxEXWZy" Location="VL.Skia" Version="2023.5.3-0437-g18ca83680e" />
+  <NugetDependency Id="Kl3sm8qFRjOLd8DHxEXWZy" Location="VL.Skia" Version="2024.6.0-0179-g427422701e" />
   <DocumentDependency Id="NL4rX00AS1nL60c1aoSiVy" Location="../vl/VL.FastNoiseLite.Skia.vl" />
 </Document>
