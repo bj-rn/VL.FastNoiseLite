@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="EWHWcwf3oBvPnhn254YyBa" LanguageVersion="2023.5.3-0423-gee17475a3a" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="EWHWcwf3oBvPnhn254YyBa" LanguageVersion="2024.6.0-0179-g427422701e" Version="0.128">
   <Patch Id="Rgz0iK0cdl5O6XLZAnSI2k">
     <Canvas Id="EtMz6eWyJpjMOVOROl6714" DefaultCategory="FastNoiseLite" CanvasType="FullCategory" />
     <!--
@@ -23,5 +23,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Ko9OqCOVyY7Pz8mbJrOqb0" Location="VL.CoreLib" Version="2023.5.3-0423-gee17475a3a" />
+  <NugetDependency Id="Ko9OqCOVyY7Pz8mbJrOqb0" Location="VL.CoreLib" Version="2024.6.0-0179-g427422701e" />
+  <DocumentDependency Id="SL9AVYndMV3Ov3jR3TFhNJ" Location="./vl/VL.FastNoiseLite.CPU.vl" IsForward="true" />
+  <DocumentDependency Id="LKdK2ZFQGYzPwEsHhoQL05" Location="./vl/VL.FastNoiseLite.Enums.vl" IsForward="true" />
+  <DocumentDependency Id="C0etL1JxXRpNoveO11UqSW" Location="./vl/VL.FastNoiseLite.Skia.vl" IsForward="true" />
 </Document>
