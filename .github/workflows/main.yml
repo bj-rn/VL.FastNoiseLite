@@ -16,7 +16,7 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: Git Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@main
     
     - name: Setup MSBuild.exe
       uses: microsoft/setup-msbuild@v1.3.1
@@ -27,8 +27,8 @@ jobs:
     - name: Publish VL Nuget
       uses: vvvv/PublishVLNuget@1.0.42
       with:
-        csproj: src\VL.NewLibrary.Template.csproj
-        nuspec: deployment\VL.NewLibrary.Template.nuspec
+        csproj: src\FastNoiseLite.csproj
+        nuspec: deployment\VL.FastNoiseLite.nuspec
 
         # Fill the Icon file
         icon-src: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
