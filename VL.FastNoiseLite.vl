@@ -27,4 +27,5 @@
   <DocumentDependency Id="SL9AVYndMV3Ov3jR3TFhNJ" Location="./vl/VL.FastNoiseLite.CPU.vl" IsForward="true" />
   <DocumentDependency Id="LKdK2ZFQGYzPwEsHhoQL05" Location="./vl/VL.FastNoiseLite.Enums.vl" IsForward="true" />
   <DocumentDependency Id="C0etL1JxXRpNoveO11UqSW" Location="./vl/VL.FastNoiseLite.Skia.vl" IsForward="true" />
+  <DocumentDependency Id="LDl1O3ef6WIOpb8IPLvYD2" Location="./vl/VL.FastNoiseLite.GPU.vl" IsForward="true" />
 </Document>
