@@ -19,7 +19,7 @@ namespace FastNoiseLite
     };
 
 
-    public static class FastNoiseLiteExension
+    public static class FastNoiseLiteExtension
     {
         public static float GetNoise(this FastNoiseLite fnl, Vector2 xy)
         {
