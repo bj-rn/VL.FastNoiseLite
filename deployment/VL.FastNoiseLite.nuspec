@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>VL.FastNoiseLite</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>VL.FastNoiseLite</title>
     <authors>bj-rn</authors>
     <owners>bj-rn</owners>
@@ -12,8 +12,8 @@
     <projectUrl>https://github.com/bj-rn/VL.FastNoiseLite</projectUrl>
     <summary>A VL wrapper for FastNoiseLite</summary>
     <description>A VL wrapper for FastNoiseLite a open source noise generation library with a large selection of noise algorithms.</description>
-    <copyright>Copyright © 2024</copyright>
-    <tags>VL, vvvv, gamma, math, noise</tags>
+    <copyright>Copyright © 2026</copyright>
+    <tags>VL, vvvv, gamma, Stride, Skia, shader, math, noise</tags>
   </metadata>
    <files>
     <file src="..\*.vl"/>
