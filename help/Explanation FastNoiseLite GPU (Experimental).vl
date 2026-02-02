@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="HpjKSawvNyzLpPihnIKENX" LanguageVersion="2024.6.0-0179-g427422701e" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="HpjKSawvNyzLpPihnIKENX" LanguageVersion="2025.7.0" Version="0.128">
   <Patch Id="Rgz0iK0cdl5O6XLZAnSI2k">
     <Canvas Id="EtMz6eWyJpjMOVOROl6714" DefaultCategory="FastNoiseLite" CanvasType="FullCategory" />
     <!--
@@ -76,7 +76,7 @@
             <Pin Id="MvtzaYXHl3qO76NXVAVLmr" Name="Enabled" Kind="InputPin" />
             <Pin Id="TpVWQNJg5ajNPcYHgBLHxm" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="VB4Ff3o9GAyMJKUdZVRcIL" Comment="Output Size" Bounds="603,384,35,28" ShowValueBox="true" isIOBox="true" Value="1024, 1024">
+          <Pad Id="VB4Ff3o9GAyMJKUdZVRcIL" Comment="Output Size" Bounds="602,390,35,28" ShowValueBox="true" isIOBox="true" Value="1024, 1024">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Int2" />
             </p:TypeAnnotation>
@@ -86,12 +86,12 @@
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="GlEdQTwf2Z3N39puZERWeB" Comment="Noise Type" Bounds="123,136,94,15" ShowValueBox="true" isIOBox="true" Value="Cellular">
+          <Pad Id="GlEdQTwf2Z3N39puZERWeB" Comment="Noise Type" Bounds="123,136,101,15" ShowValueBox="true" isIOBox="true" Value="Cellular">
             <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.Enums.vl">
               <Choice Kind="TypeFlag" Name="NoiseType" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="EZN7nuvgVCCPJwIPkvJoLh" Comment="Fractal Type" Bounds="166,172,65,15" ShowValueBox="true" isIOBox="true" Value="FBm">
+          <Pad Id="EZN7nuvgVCCPJwIPkvJoLh" Comment="Fractal Type" Bounds="166,172,72,15" ShowValueBox="true" isIOBox="true" Value="FBm">
             <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.Enums.vl">
               <Choice Kind="TypeFlag" Name="GeneralFractalType" />
             </p:TypeAnnotation>
@@ -111,7 +111,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="OhrcqWEHw0pO2F3QaWfR4s" Comment="Domain Warp Fractal Type" Bounds="292,253,138,15" ShowValueBox="true" isIOBox="true" Value="DomainWarpIndependent">
+          <Pad Id="OhrcqWEHw0pO2F3QaWfR4s" Comment="Domain Warp Fractal Type" Bounds="292,253,144,15" ShowValueBox="true" isIOBox="true" Value="DomainWarpIndependent">
             <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.Enums.vl">
               <Choice Kind="TypeFlag" Name="DomainWarpFractalType" />
             </p:TypeAnnotation>
@@ -131,7 +131,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="DfubULILoODL1mO7AbmFdQ" Comment="Domain Warp Type" Bounds="271,227,128,15" ShowValueBox="true" isIOBox="true" Value="OpenSimplex2Reduced">
+          <Pad Id="DfubULILoODL1mO7AbmFdQ" Comment="Domain Warp Type" Bounds="271,227,134,15" ShowValueBox="true" isIOBox="true" Value="OpenSimplex2Reduced">
             <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.Enums.vl">
               <Choice Kind="TypeFlag" Name="DomainWarpType" />
             </p:TypeAnnotation>
@@ -165,9 +165,9 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Ko9OqCOVyY7Pz8mbJrOqb0" Location="VL.CoreLib" Version="2024.6.0-0179-g427422701e" />
-  <NugetDependency Id="QmDf0pV6owpM9RJrWcXtYV" Location="VL.Stride" Version="2024.6.0-0179-g427422701e" />
-  <NugetDependency Id="P9Qf9AtaOiWP3KOu24OMxE" Location="VL.Stride.TextureFX" Version="2024.6.0-0179-g427422701e" />
+  <NugetDependency Id="Ko9OqCOVyY7Pz8mbJrOqb0" Location="VL.CoreLib" Version="2025.7.0" />
+  <NugetDependency Id="QmDf0pV6owpM9RJrWcXtYV" Location="VL.Stride" Version="2025.7.0" />
+  <NugetDependency Id="P9Qf9AtaOiWP3KOu24OMxE" Location="VL.Stride.TextureFX" Version="2025.7.0" />
   <DocumentDependency Id="Ky9hZ3P9oTkMameNREazNe" Location="../vl/VL.FastNoiseLite.Enums.vl" />
   <DocumentDependency Id="CVw4fXv2QDqNnSkidOHWRM" Location="../vl/VL.FastNoiseLite.GPU.vl" />
 </Document>

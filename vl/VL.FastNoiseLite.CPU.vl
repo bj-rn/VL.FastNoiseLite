@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="FQJfMWHhtKBOCqjgH7PSPV" LanguageVersion="2024.6.0-0179-g427422701e" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="FQJfMWHhtKBOCqjgH7PSPV" LanguageVersion="2025.7.0" Version="0.128">
   <Patch Id="Rgz0iK0cdl5O6XLZAnSI2k">
     <Canvas Id="EtMz6eWyJpjMOVOROl6714" DefaultCategory="Math.Noise" CanvasType="FullCategory">
       <!--
@@ -841,6 +841,7 @@
               <Pin Id="EJJqJCmiSfyLr3iNbTs74s" Name="Domain Warp Fractal Octaves" Kind="InputPin" />
               <Pin Id="GQ9rX8HkyOKN0hF7G394ez" Name="Domain Warp Fractal Lacunarity" Kind="InputPin" />
               <Pin Id="M27gJ5Y1VYwNfrBlc2HdtJ" Name="Domain Warp Fractal Gain" Kind="InputPin" />
+              <Pin Id="K4x1Sqp6jVsNGn2vKxtoCD" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="E0N9owSRaT1P1PwAHHSnks" Name="FNL" Kind="OutputPin" />
               <Pin Id="HdElvVXM6G1P0FxAMZXUmM" Name="Warp" Kind="OutputPin" />
               <Pin Id="UaVvq6QAE3sPGIxR8zwyh4" Name="Domain Warp Type" Kind="OutputPin" />
@@ -1218,6 +1219,7 @@
               <Pin Id="DgXTQE32ZZSORczp3rPQCj" Name="Domain Warp Fractal Octaves" Kind="InputPin" />
               <Pin Id="PVdkVVZ1Q3yNM6TYY0jlpK" Name="Domain Warp Fractal Lacunarity" Kind="InputPin" />
               <Pin Id="VldIRBWTAedOycxLxRRCgD" Name="Domain Warp Fractal Gain" Kind="InputPin" />
+              <Pin Id="HDuwaWrOuW7QF91XJtZnZO" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="KVT7LwubC9vPlyEE1fKk0o" Name="FNL" Kind="OutputPin" />
               <Pin Id="FddU3DrvIrhO6EDFbyEafL" Name="Warp" Kind="OutputPin" />
               <Pin Id="HPcSfDQP93cOKCuxSUB4YZ" Name="Domain Warp Type" Kind="OutputPin" />
@@ -1399,6 +1401,7 @@
               <Pin Id="UgyKLNrADOGNo7BBOE0vlq" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="GrZvcBnM95cMWUxHf3bVqk" Name="Trigger" Kind="InputPin" />
               <Pin Id="SiCnJG2P0nfLzY4fcFcLWJ" Name="Abort" Kind="InputPin" />
+              <Pin Id="QLhIpVhcHBiNbAS2jgjd6Z" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="PG97okzfXPTLdfyVtSpHcR" Name="Result" Kind="OutputPin" />
               <Pin Id="VoZHFcXkIfaPWKcL1s1KQ0" Name="In Progress" Kind="OutputPin" />
               <Patch Id="EDsOBc6kyiCOeEBBwlho23" ManuallySortedPins="true">
@@ -1485,6 +1488,7 @@
               <Pin Id="A2WEhzXsQIoLFWjwefX5LX" Name="Initial Result" Kind="InputPin" IsHidden="true" />
               <Pin Id="RZ6ElPM22tXMtmeqV7CnUO" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="DXxmh5moxmVLkOFW6XtlK7" Name="Reset" Kind="InputPin" />
+              <Pin Id="BCJfyr9JP9kP6Uiaduwz3A" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="G33NHnx4243MYYJciTxZjl" Name="Value" Kind="OutputPin" />
               <Pin Id="GPmGQ3MulysL5qYk3FhtYz" Name="On Data" Kind="OutputPin" />
             </Node>
@@ -1536,6 +1540,7 @@
               <Pin Id="VN7fePQfxN6PLifE9L5HQA" Name="Domain Warp Fractal Octaves" Kind="InputPin" />
               <Pin Id="Ud17LPiSr8qMbauQ32D6SM" Name="Domain Warp Fractal Lacunarity" Kind="InputPin" />
               <Pin Id="AJRRXXsPschLGog5hCzVjO" Name="Domain Warp Fractal Gain" Kind="InputPin" />
+              <Pin Id="N1s1ToDEuVqN5L8vkHlmUO" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="VX9bFGlRGmvN3bdZbXexHE" Name="FNL" Kind="OutputPin" />
               <Pin Id="D4OPxXdwOYNNoLRDbTvqyN" Name="Warp" Kind="OutputPin" />
               <Pin Id="GsnYVXRJ7mAN7nkC7BSZYs" Name="Domain Warp Type" Kind="OutputPin" />
@@ -1848,6 +1853,7 @@
               <Pin Id="BSeYHDHBbAOMZb1szNOYgb" Name="Domain Warp Fractal Octaves" Kind="InputPin" />
               <Pin Id="LsdGmxKm00XPL0WTWESMKl" Name="Domain Warp Fractal Lacunarity" Kind="InputPin" />
               <Pin Id="K781qkSwjPAONCytyIeke1" Name="Domain Warp Fractal Gain" Kind="InputPin" />
+              <Pin Id="CYxlhSBzWtWOLaTanqwQUr" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="EAIybZ3Rv5wNwIpp4xQrji" Name="FNL" Kind="OutputPin" />
               <Pin Id="JlZ4sO8I5rzPVNMNKktdKt" Name="Warp" Kind="OutputPin" />
               <Pin Id="HXmKR67jhl2LRdjUYnehcz" Name="Domain Warp Type" Kind="OutputPin" />
@@ -2124,12 +2130,13 @@
               <Pin Id="LZFv1JBaH23OhaTV8gKS5g" Name="Domain Warp Fractal Octaves" Kind="InputPin" />
               <Pin Id="Gsk8e7bYtzuPt2kfNv9faI" Name="Domain Warp Fractal Lacunarity" Kind="InputPin" />
               <Pin Id="K518dDsrRsQNr7DuR6wJsq" Name="Domain Warp Fractal Gain" Kind="InputPin" />
+              <Pin Id="K3evR6xzRtkMt2qxX7ADYO" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="PAnZkOA3ufGPSC1EEjAMoU" Name="FNL" Kind="OutputPin" />
               <Pin Id="L0Pp3eyBopkLosIxVwUMZB" Name="Warp" Kind="OutputPin" />
               <Pin Id="VaVQGiDAlmMQYKPMPgHqb7" Name="Domain Warp Type" Kind="OutputPin" />
               <Pin Id="BeTiN1QMWCzO3trs5gJQaP" Name="Needs Update" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="AqUYMqdDzxoNGlPkdPb4F4" Bounds="203,107" />
+            <ControlPoint Id="AqUYMqdDzxoNGlPkdPb4F4" Bounds="201,110" />
             <ControlPoint Id="OdVztxSJQCOQZlW3EjhDfB" Bounds="241,147" />
             <ControlPoint Id="Ou7iRLl5uNIMccNquDqww3" Bounds="262,168" />
             <ControlPoint Id="U840cESRU9XNaca4QG3Bzf" Bounds="280,206" />
@@ -2301,6 +2308,7 @@
               <Pin Id="Gy6yXhDC4n3LbSk3JkPLEY" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="MLu6Z2hjk6uL7gm0oPT55g" Name="Trigger" Kind="InputPin" />
               <Pin Id="AXyNonx0ZP3N4YVdDkmiK4" Name="Abort" Kind="InputPin" />
+              <Pin Id="VIfeocm1ZsGPEzsxcyR3so" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="BkjHCm8GOFIQXnE8p5K1Gb" Name="Result" Kind="OutputPin" />
               <Pin Id="CoBHTko9ZjOOJICb3XlDVR" Name="In Progress" Kind="OutputPin" />
               <Patch Id="JXG0lI2XKBBQW6ibYwQ4AQ" ManuallySortedPins="true">
@@ -2387,6 +2395,7 @@
               <Pin Id="Drn79vvqjNYPEnJj6h3J0T" Name="Initial Result" Kind="InputPin" IsHidden="true" />
               <Pin Id="LGB6aGDWD5mN07mTRhA4CX" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="FqWKuUEg0hyOJXZQ8bPCvP" Name="Reset" Kind="InputPin" />
+              <Pin Id="UQ72h9FCis7Ol6puUClnhu" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="UgYNLRfteZVOxg6NZnVAyl" Name="Value" Kind="OutputPin" />
               <Pin Id="DoCoOlP3PMHLvk4VvlOQib" Name="On Data" Kind="OutputPin" />
             </Node>
@@ -2438,6 +2447,7 @@
               <Pin Id="TZ20awrRTaMNfo0JI0phZp" Name="Domain Warp Fractal Octaves" Kind="InputPin" />
               <Pin Id="Sjs6YAV3aFNMGry3GE333Y" Name="Domain Warp Fractal Lacunarity" Kind="InputPin" />
               <Pin Id="LVavLkJnJY8QRSgE853Vb2" Name="Domain Warp Fractal Gain" Kind="InputPin" />
+              <Pin Id="UJq4bxgKOoTO49NHkEF0g8" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="KIHLoeiCMeDM4PISq88i2G" Name="FNL" Kind="OutputPin" />
               <Pin Id="T2NQomh6U3sLhNcTGk2kkD" Name="Warp" Kind="OutputPin" />
               <Pin Id="UhtZanFaeuLMEaXrBqbUYU" Name="Domain Warp Type" Kind="OutputPin" />
@@ -2618,7 +2628,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Ko9OqCOVyY7Pz8mbJrOqb0" Location="VL.CoreLib" Version="2024.6.0-0179-g427422701e" />
-  <PlatformDependency Id="O4eDXu1arv1OboTNIPy8AI" Location="../lib/net6.0/FastNoiseLite.dll" />
+  <NugetDependency Id="Ko9OqCOVyY7Pz8mbJrOqb0" Location="VL.CoreLib" Version="2025.7.0" />
+  <PlatformDependency Id="O4eDXu1arv1OboTNIPy8AI" Location="../lib/net8.0/FastNoiseLite.dll" />
   <DocumentDependency Id="DcZf7PT25nWQHgc0BRz3gr" Location="./VL.FastNoiseLite.Enums.vl" />
 </Document>

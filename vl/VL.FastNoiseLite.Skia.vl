@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="VPf9JPghAivOTmfgRjGC7B" LanguageVersion="2023.5.3-0437-g18ca83680e" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="VPf9JPghAivOTmfgRjGC7B" LanguageVersion="2025.7.0" Version="0.128">
   <Patch Id="Rgz0iK0cdl5O6XLZAnSI2k">
     <Canvas Id="EtMz6eWyJpjMOVOROl6714" DefaultCategory="Skia.Imaging" CanvasType="FullCategory">
       <!--
@@ -41,6 +41,7 @@
               <Pin Id="IfzcRXS8WaKOa7ABXc4jTr" Name="Domain Warp Fractal Octaves" Kind="InputPin" />
               <Pin Id="VYvNJ1wT5HvNlYSZYe6bR1" Name="Domain Warp Fractal Lacunarity" Kind="InputPin" />
               <Pin Id="D5YnYz9OR3vLwMPzfkpwWb" Name="Domain Warp Fractal Gain" Kind="InputPin" />
+              <Pin Id="NB87IAxb4fvO2E1ELmAST8" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="OQ9VTFIirvtPQOJ5qdXr5v" Name="FNL" Kind="OutputPin" />
               <Pin Id="PR6UAwzNHWVOP5J3rZ4NVQ" Name="Warp" Kind="OutputPin" />
               <Pin Id="OPcON9xDG8IO2kQ0YneULK" Name="Domain Warp Type" Kind="OutputPin" />
@@ -66,12 +67,12 @@
             <ControlPoint Id="JxKejMFfiyONLn22UL3bkj" Bounds="614,721" />
             <ControlPoint Id="MAuztTfRQmFMMpVz6eET09" Bounds="635,746" />
             <ControlPoint Id="TRnjUgc3XFvLPOoFkPQrHR" Bounds="655,769" />
-            <Pad Id="TUXmRdDrpVZORSya28BiRT" Comment="Domain Warp Rotation Type 3D" Bounds="516,579,101,15" ShowValueBox="true" isIOBox="true" Value="None">
+            <Pad Id="TUXmRdDrpVZORSya28BiRT" Comment="Domain Warp Rotation Type 3D" Bounds="516,579,107,15" ShowValueBox="true" isIOBox="true" Value="None">
               <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.Enums.vl">
                 <Choice Kind="TypeFlag" Name="RotationType3D" />
               </p:TypeAnnotation>
             </Pad>
-            <Pad Id="LlB8KNRgcQGOBDvZf1MZQ9" Comment="Rotation Type 3D" Bounds="248,230,101,15" ShowValueBox="true" isIOBox="true" Value="None">
+            <Pad Id="LlB8KNRgcQGOBDvZf1MZQ9" Comment="Rotation Type 3D" Bounds="248,230,107,15" ShowValueBox="true" isIOBox="true" Value="None">
               <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.Enums.vl">
                 <Choice Kind="TypeFlag" Name="RotationType3D" />
               </p:TypeAnnotation>
@@ -258,6 +259,7 @@
               <Pin Id="BVeCxXg2F7yOdHRCD3pCGx" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="Hx8hk1lQK7qQNyG64JwKZf" Name="Trigger" Kind="InputPin" />
               <Pin Id="VjYUNPx9MvzOhsdunW7IHz" Name="Abort" Kind="InputPin" />
+              <Pin Id="E1vubb6BCBFMxwZvryLa10" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="KxtN0tRrndIMhgkBdF32Ag" Name="Result" Kind="OutputPin" />
               <Pin Id="N9GKJYTFbz2MCOdV2UZ4rn" Name="In Progress" Kind="OutputPin" />
               <Patch Id="IJSo7ST4k88NOipoN1pGOd" ManuallySortedPins="true">
@@ -417,6 +419,7 @@
               <Pin Id="EDRFD7g2Hk8MQIwhyMqm1Q" Name="Initial Result" Kind="InputPin" IsHidden="true" />
               <Pin Id="Q02jXBt2aXMMNqjWM2ETj2" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="SFcuR6tIFCoLhCiFRVoSEO" Name="Reset" Kind="InputPin" />
+              <Pin Id="NTF2gp37Nv1PaNKCmnuIkG" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="HCuBYUiKqYCOOL5UaM2W9S" Name="Value" Kind="OutputPin" />
               <Pin Id="FxlTO4MH65COclbXgnY4yg" Name="On Data" Kind="OutputPin" />
             </Node>
@@ -678,8 +681,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Ko9OqCOVyY7Pz8mbJrOqb0" Location="VL.CoreLib" Version="2023.5.3-0437-g18ca83680e" />
-  <NugetDependency Id="BvphwYKoLqSQShZQWzXlre" Location="VL.Skia" Version="2023.5.3-0437-g18ca83680e" />
+  <NugetDependency Id="Ko9OqCOVyY7Pz8mbJrOqb0" Location="VL.CoreLib" Version="2025.7.0" />
+  <NugetDependency Id="BvphwYKoLqSQShZQWzXlre" Location="VL.Skia" Version="2025.7.0" />
   <DocumentDependency Id="HipSUTuOBE0QGBKDpOQUiP" Location="./VL.FastNoiseLite.Enums.vl" />
   <DocumentDependency Id="DOdgDRhNCUdNDQqtVXVMLe" Location="./VL.FastNoiseLite.CPU.vl" IsFriend="true" />
 </Document>

@@ -197,5 +197,5 @@
     </Node>
   </Patch>
   <NugetDependency Id="Ko9OqCOVyY7Pz8mbJrOqb0" Location="VL.CoreLib" Version="2023.5.3-0437-g18ca83680e" />
-  <PlatformDependency Id="Kkxh9JTSbnvMDvRjdCjYp5" Location="../lib/net6.0/FastNoiseLite.dll" />
+  <PlatformDependency Id="Kkxh9JTSbnvMDvRjdCjYp5" Location="../lib/net8.0/FastNoiseLite.dll" />
 </Document>

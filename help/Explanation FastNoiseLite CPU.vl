@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="GvynCVwY4gJLfyffCkm2CG" LanguageVersion="2024.6.0-0179-g427422701e" Version="0.128">
-  <NugetDependency Id="KQRMT2y0Qe9PbZXEEBDNo8" Location="VL.CoreLib" Version="2024.6.0-0179-g427422701e" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="GvynCVwY4gJLfyffCkm2CG" LanguageVersion="2025.7.0" Version="0.128">
+  <NugetDependency Id="KQRMT2y0Qe9PbZXEEBDNo8" Location="VL.CoreLib" Version="2025.7.0" />
   <Patch Id="AT2F5od2tftQCWtBLHrw7A">
     <Canvas Id="JPxTfRIvlS0MsiGdr6X6tb" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -127,7 +127,7 @@
             <Pin Id="HZJUzHAeiT3PSON0LnAwjR" Name="Domain Warp Fractal Gain" Kind="InputPin" DefaultValue="0.43" />
             <Pin Id="Gx81IuYfUfxQPfesPG4Btf" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="A8dg383T0FoMoLyDAmKpJo" Comment="Noise Type" Bounds="635,100,94,15" ShowValueBox="true" isIOBox="true" Value="Value">
+          <Pad Id="A8dg383T0FoMoLyDAmKpJo" Comment="Noise Type" Bounds="635,100,101,15" ShowValueBox="true" isIOBox="true" Value="Value">
             <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.CPU.vl">
               <Choice Kind="TypeFlag" Name="NoiseType" />
             </p:TypeAnnotation>
@@ -148,7 +148,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="OPBTjqMcssOPFXIIpgYfU0" Comment="Domain Warp Type" Bounds="1143,676,128,15" ShowValueBox="true" isIOBox="true" Value="OpenSimplex2Reduced">
+          <Pad Id="OPBTjqMcssOPFXIIpgYfU0" Comment="Domain Warp Type" Bounds="1143,676,134,15" ShowValueBox="true" isIOBox="true" Value="OpenSimplex2Reduced">
             <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.CPU.vl">
               <Choice Kind="TypeFlag" Name="DomainWarpType" />
             </p:TypeAnnotation>
@@ -163,7 +163,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="IS9cpAWS5eJMpcEx42dDBB" Comment="Domain Warp Fractal Type" Bounds="1312,876,138,15" ShowValueBox="true" isIOBox="true" Value="DomainWarpIndependent" />
+          <Pad Id="IS9cpAWS5eJMpcEx42dDBB" Comment="Domain Warp Fractal Type" Bounds="1312,876,144,15" ShowValueBox="true" isIOBox="true" Value="DomainWarpIndependent" />
           <Pad Id="IU6ABgdJqcIPyauEfxIgdQ" Comment="Domain Warp Fractal Octaves" Bounds="1355,910,35,15" ShowValueBox="true" isIOBox="true" Value="3">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
@@ -209,12 +209,12 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="SosKPmfxa7sOe5Y7X75KOu" Comment="Cellular Distance Function" Bounds="1016,518,77,15" ShowValueBox="true" isIOBox="true" Value="EuclideanSq">
+          <Pad Id="SosKPmfxa7sOe5Y7X75KOu" Comment="Cellular Distance Function" Bounds="1016,518,84,15" ShowValueBox="true" isIOBox="true" Value="EuclideanSq">
             <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.CPU.vl">
               <Choice Kind="TypeFlag" Name="CellularDistanceFunction" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="TRl2HufaE6ILFfksCKQDa9" Comment="Cellular Return Type" Bounds="1056,553,86,15" ShowValueBox="true" isIOBox="true" Value="Distance">
+          <Pad Id="TRl2HufaE6ILFfksCKQDa9" Comment="Cellular Return Type" Bounds="1056,553,93,15" ShowValueBox="true" isIOBox="true" Value="Distance">
             <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.CPU.vl">
               <Choice Kind="TypeFlag" Name="CellularReturnType" />
             </p:TypeAnnotation>
@@ -249,6 +249,7 @@
             <Pin Id="HIQ7bDXWug2NSBaIw3C3U4" Name="Children" Kind="InputPin" />
             <Pin Id="UfmwapquS3iPa3eFKc6sAI" Name="Name" Kind="InputPin" />
             <Pin Id="JI0HM64GFXTPXSkNu12RA3" Name="Enabled" Kind="InputPin" />
+            <Pin Id="ABvjQzWOHAcODD4kxmc3vR" Name="Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="V1WZWewx7r3O6QQ3gMNTS6" Name="Entity" Kind="OutputPin" />
           </Node>
           <Node Bounds="81,1617,225,19" Id="TQmwvuQQa3PLjsd7vPjWzI">
@@ -256,13 +257,14 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
-            <Pin Id="MzAYaYpJQRnLOX6cXhF5AA" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="U3koNsCNIbsQYKyLeOEF9k" Name="Bounds" Kind="InputPin" DefaultValue="1381.3334, 103.333336, 341.33334, 341.33334" IsHidden="true" />
             <Pin Id="KvRaMCdButoPddibjXb2YO" Name="Bound to Document" Kind="InputPin" DefaultValue="True" />
             <Pin Id="K4gp7G2J3LlL3PLw1musjI" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
             <Pin Id="SE8p8E6HKPTMLrwLX5ZyCM" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
             <Pin Id="RzlqmJoeXECMoTd8RjBkXf" Name="Back Buffer Format" Kind="InputPin" IsHidden="true" />
             <Pin Id="EJQrHLHTIJ8NdKxn3rHKMy" Name="Depth Buffer Format" Kind="InputPin" IsHidden="true" />
+            <Pin Id="I4sIwa6KFlxPnT4GuuARbB" Name="Input Priority" Kind="InputPin" IsHidden="true" />
+            <Pin Id="MzAYaYpJQRnLOX6cXhF5AA" Name="Node Context" Kind="InputPin" />
             <Pin Id="GvOqV7QQgJzPif4syTMWFB" Name="Input" Kind="InputPin" />
             <Pin Id="EqYrKxszbw4LCkQJkTDLCG" Name="Camera" Kind="InputPin" />
             <Pin Id="RKROVP7Con6NcnEFEOTjED" Name="Enable Default Camera" Kind="InputPin" />
@@ -277,6 +279,7 @@
             <Pin Id="ItuNCKyqXmsMx7Ghw2CtAu" Name="Model Effect Name" Kind="InputPin" IsHidden="true" />
             <Pin Id="V67hLVlgIVgOMPYy4e3Sjl" Name="Additional Scene Renderers" Kind="InputPin" IsHidden="true" />
             <Pin Id="Uf0SkO5l2oXMLjooRNgABm" Name="Enabled" Kind="InputPin" />
+            <Pin Id="Docq5BUy5OwMv8fKehZEDR" Name="Input Source" Kind="InputPin" IsHidden="true" />
             <Pin Id="VEHJmwIYpUIMYW922BAYYq" Name="Present Interval" Kind="InputPin" />
             <Pin Id="EmkM7Pxa2R1NMGojjiGqRQ" Name="MSAALevel" Kind="InputPin" IsHidden="true" />
             <Pin Id="QZQo1wYuuynQQ5I2SOKbCj" Name="MSAAResolver" Kind="InputPin" IsHidden="true" />
@@ -290,6 +293,7 @@
             <Pin Id="S6zgSxEAYVsLjiIKikSlcT" Name="Input Source" Kind="OutputPin" />
             <Pin Id="BluhU3vuuzdQdDFN5ItTxL" Name="Back Buffer" Kind="OutputPin" IsHidden="true" />
             <Pin Id="I4TotiXipqSOHzNAtEWvLq" Name="Depth Buffer" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="GI4y2a0HJDjQPRpAx34L8F" Name="Present Call Intercept" Kind="InputPin" IsHidden="true" />
           </Node>
           <Node Bounds="100,1579,65,19" Id="M2moCedCMS8LXydicBXrM0">
             <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.vl">
@@ -329,6 +333,7 @@
             <Pin Id="I7535yK4RbTPi0v4kYhuku" Name="Component" Kind="InputPin" />
             <Pin Id="V25RQEY3wHRPvfyDeFoIQp" Name="Name" Kind="InputPin" />
             <Pin Id="R5Eom7A6813MXqXkipp7P0" Name="Enabled" Kind="InputPin" />
+            <Pin Id="DtIrqqBsSvwN1iggbBXquj" Name="Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="ThQFIxALRQhNPXxXT0ydCn" Name="Entity" Kind="OutputPin" />
           </Node>
           <Node Bounds="300,1420,147,19" Id="ExgqzJ8mExlLJa9lFpWPbn">
@@ -508,6 +513,7 @@
             <Pin Id="S4NExxLSLULOmVcdmVU9cW" Name="Transparency" Kind="InputPin" />
             <Pin Id="UyoJGx1JEFhNyNh3IrL8re" Name="Layers" Kind="InputPin" />
             <Pin Id="IoJXWbiOneRMCNVCF61w1K" Name="Cull Mode" Kind="InputPin" />
+            <Pin Id="Nz1MYNOJqCvPsY8YQYT5HG" Name="State Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="SiYDj0scViWOPs1TsbPgI5" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="MDJltd7A6zyOj4n0aAenpT" Bounds="646,1182,457,937" ShowValueBox="true" isIOBox="true" Value="FastNoise Lite Documentation&#xD;&#xA;&#xD;&#xA;FNL generates coherent noise at the given x, y{, z} position. &#xD;&#xA;NoiseType sets the noise algorithm for that.&#xD;&#xA;&#xD;&#xA;All noise outputs are bounded from -1.0 to 1.0.&#xD;&#xA;Noise settings are initialised to sensible values so all noise types &#xD;&#xA;will [should] function correctly without any setup&#xD;&#xA;&#xD;&#xA;___&#xD;&#xA;Seed&#xD;&#xA;&#xD;&#xA;Using different seeds will cause the noise output to change&#xD;&#xA;___&#xD;&#xA;&#xD;&#xA;___&#xD;&#xA;Frequency&#xD;&#xA;&#xD;&#xA;Affects how coarse the patterns in the noise output are&#xD;&#xA;___&#xD;&#xA;&#xD;&#xA;___&#xD;&#xA;NoiseType&#xD;&#xA;&#xD;&#xA;Default: OpenSimplex2&#xD;&#xA;Sets the type of noise.&#xD;&#xA;&#xD;&#xA;Possible noise types:&#xD;&#xA;&#xD;&#xA;    OpenSimplex2&#xD;&#xA;    OpenSimplex2S&#xD;&#xA;    Cellular&#xD;&#xA;    Perlin&#xD;&#xA;    ValueCubic&#xD;&#xA;    Value&#xD;&#xA;___&#xD;&#xA;&#xD;&#xA;___&#xD;&#xA;RotationType3D&#xD;&#xA;&#xD;&#xA;Default: None&#xD;&#xA;&#xD;&#xA;Sets domain rotation type for 3D Noise and 3D DomainWarp. &#xD;&#xA;Can aid in reducing directional artifacts when sampling a 2D plane in 3D&#xD;&#xA;&#xD;&#xA;    None&#xD;&#xA;    ImproveXYPlanes&#xD;&#xA;    ImproveXZPlanes&#xD;&#xA;___">
@@ -645,7 +651,7 @@
             <Pin Id="CeqLP64Pnr3N2Zd800t6GM" Name="Domain Warp Fractal Gain" Kind="InputPin" DefaultValue="0.43" />
             <Pin Id="IlVvqod16uTNknmc3fYBQP" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="F0vpcNTwqIdNUbEXZTzwnP" Comment="Noise Type" Bounds="777,2318,94,15" ShowValueBox="true" isIOBox="true" Value="Value">
+          <Pad Id="F0vpcNTwqIdNUbEXZTzwnP" Comment="Noise Type" Bounds="777,2318,101,15" ShowValueBox="true" isIOBox="true" Value="Value">
             <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.CPU.vl">
               <Choice Kind="TypeFlag" Name="NoiseType" />
             </p:TypeAnnotation>
@@ -666,7 +672,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="RohbgSzoT04M1Cim0HMxPj" Comment="Domain Warp Type" Bounds="1274,2825,128,15" ShowValueBox="true" isIOBox="true" Value="OpenSimplex2Reduced">
+          <Pad Id="RohbgSzoT04M1Cim0HMxPj" Comment="Domain Warp Type" Bounds="1274,2825,134,15" ShowValueBox="true" isIOBox="true" Value="OpenSimplex2Reduced">
             <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.CPU.vl">
               <Choice Kind="TypeFlag" Name="DomainWarpType" />
             </p:TypeAnnotation>
@@ -681,7 +687,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Io7pFUDdHKxNX9b2ipaG4g" Comment="Domain Warp Fractal Type" Bounds="1463,3050,138,15" ShowValueBox="true" isIOBox="true" Value="DomainWarpIndependent" />
+          <Pad Id="Io7pFUDdHKxNX9b2ipaG4g" Comment="Domain Warp Fractal Type" Bounds="1463,3050,144,15" ShowValueBox="true" isIOBox="true" Value="DomainWarpIndependent" />
           <Pad Id="Th1rdGM7tXSLNFDg6AxD4P" Comment="Domain Warp Fractal Octaves" Bounds="1504,3092,35,15" ShowValueBox="true" isIOBox="true" Value="3">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
@@ -722,12 +728,12 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="QMqFViZUpZiM0OcDXs40VV" Comment="Cellular Distance Function" Bounds="1154,2701,77,15" ShowValueBox="true" isIOBox="true" Value="EuclideanSq">
+          <Pad Id="QMqFViZUpZiM0OcDXs40VV" Comment="Cellular Distance Function" Bounds="1154,2701,84,15" ShowValueBox="true" isIOBox="true" Value="EuclideanSq">
             <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.CPU.vl">
               <Choice Kind="TypeFlag" Name="CellularDistanceFunction" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="RBpmLfs8MmnLr94W2iAcNL" Comment="Cellular Return Type" Bounds="1192,2736,86,15" ShowValueBox="true" isIOBox="true" Value="Distance">
+          <Pad Id="RBpmLfs8MmnLr94W2iAcNL" Comment="Cellular Return Type" Bounds="1192,2736,93,15" ShowValueBox="true" isIOBox="true" Value="Distance">
             <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.CPU.vl">
               <Choice Kind="TypeFlag" Name="CellularReturnType" />
             </p:TypeAnnotation>
@@ -757,6 +763,7 @@
             <Pin Id="GzGKddtzuPQPrifP9QgOkx" Name="Children" Kind="InputPin" />
             <Pin Id="BgWgoEoAmbjPD2Trv3kfYb" Name="Name" Kind="InputPin" />
             <Pin Id="IodnDfsuZVgOoopNb3fUG3" Name="Enabled" Kind="InputPin" />
+            <Pin Id="Kk3H9pGgp8gLuXQK1jQVkX" Name="Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="CBsWUfTfS8hL4EkHpLZeGE" Name="Entity" Kind="OutputPin" />
           </Node>
           <Node Bounds="207,3851,225,19" Id="Qt1zm4QmUNFPt0q6sABNVk">
@@ -764,13 +771,14 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
-            <Pin Id="TmC9hjXhDrFQbtjrAMew2S" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="NP1TJGQAEBAOAzSD4Pt9LT" Name="Bounds" Kind="InputPin" DefaultValue="1384, 478.66666, 786, 432" IsHidden="true" />
             <Pin Id="IJ0QkDFfTc3QU23kgPq0hU" Name="Bound to Document" Kind="InputPin" DefaultValue="True" />
             <Pin Id="GqvwIBUxBbfLM31FUO5Dnc" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
             <Pin Id="CL69UMEdwl5NX0wNavWYaH" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
             <Pin Id="Lz5Tb3VrwqDP7UsdRVPdpt" Name="Back Buffer Format" Kind="InputPin" IsHidden="true" />
             <Pin Id="HBZBGHdKqlLNVCfkD3fV6p" Name="Depth Buffer Format" Kind="InputPin" IsHidden="true" />
+            <Pin Id="E2FLMjCGTkxQJsseEYPzF3" Name="Input Priority" Kind="InputPin" IsHidden="true" />
+            <Pin Id="TmC9hjXhDrFQbtjrAMew2S" Name="Node Context" Kind="InputPin" />
             <Pin Id="E6GNw2dLXLNNjMUppODZj9" Name="Input" Kind="InputPin" />
             <Pin Id="DMyZEzSJ5ixN0e07FUFIWU" Name="Camera" Kind="InputPin" />
             <Pin Id="BpVRln4j9thQRFU98lpm44" Name="Enable Default Camera" Kind="InputPin" />
@@ -785,6 +793,7 @@
             <Pin Id="CF1frl0x1AbLqB3hw2aXgg" Name="Model Effect Name" Kind="InputPin" IsHidden="true" />
             <Pin Id="UB17jAxqvzqPpVj1HvjPUU" Name="Additional Scene Renderers" Kind="InputPin" IsHidden="true" />
             <Pin Id="Fc4rsJJcweyOyhN5XTtyVD" Name="Enabled" Kind="InputPin" />
+            <Pin Id="SqAR88Ra7IzPfr920jZI9V" Name="Input Source" Kind="InputPin" IsHidden="true" />
             <Pin Id="TgyRAaPsfg3PUWxc4x0Bf2" Name="Present Interval" Kind="InputPin" />
             <Pin Id="IeKBQuZqcDZO6IQAjdyiQ9" Name="MSAALevel" Kind="InputPin" IsHidden="true" />
             <Pin Id="BKdle6s4ogiMKBilc4mx1P" Name="MSAAResolver" Kind="InputPin" IsHidden="true" />
@@ -798,6 +807,7 @@
             <Pin Id="TMdcYK3gJ1jMAmV7bIHHfQ" Name="Input Source" Kind="OutputPin" />
             <Pin Id="EGHJOWnBdNFM7csLJWTLIr" Name="Back Buffer" Kind="OutputPin" IsHidden="true" />
             <Pin Id="No7Z0lylz8WQMLP2CFFtSz" Name="Depth Buffer" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="Olj1u9Lkw0GLAjFSUEQkzf" Name="Present Call Intercept" Kind="InputPin" IsHidden="true" />
           </Node>
           <Node Bounds="227,3813,65,19" Id="JikVDNjPK0wL5McpTGAPlb">
             <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.vl">
@@ -824,6 +834,7 @@
             <Pin Id="QzqkoJWMujyNbwwlUyox5d" Name="Component" Kind="InputPin" />
             <Pin Id="VAO1mjucEKpPGnQyhO0jTa" Name="Name" Kind="InputPin" />
             <Pin Id="BBqzqk3JVBMOlUI4O34K9y" Name="Enabled" Kind="InputPin" />
+            <Pin Id="MW9PcmQvGQKQPEl8QEoCSW" Name="Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="Sgwzko3AhkbPmrfrRcf3um" Name="Entity" Kind="OutputPin" />
           </Node>
           <Node Bounds="389,3645,147,19" Id="L2qHUB8x3slOlE1RfP2qab">
@@ -1001,6 +1012,7 @@
             <Pin Id="MxNsXr9FSpPPbrkpb7F4T0" Name="Transparency" Kind="InputPin" />
             <Pin Id="SyJ3AV8JizNNNb5Bkyu6KW" Name="Layers" Kind="InputPin" />
             <Pin Id="TJdwFlVrKzzOzr1JGWPrl4" Name="Cull Mode" Kind="InputPin" />
+            <Pin Id="A7TNI6OZfvOMChdLm2WVle" Name="State Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="QCDl65x252OQcUZnIUrmsj" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="446,2968,85,19" Id="JfhNyIlEdn4LenE8D0YJF5">
@@ -1050,13 +1062,14 @@
             <Pin Id="SeiiEziQdW4PFZXmr41mFU" Name="Frustum" Kind="OutputPin" />
             <Pin Id="MABeXo9lFwwN9Pg3nfBYNE" Name="Inverse View" Kind="OutputPin" />
             <Pin Id="Olf34bj0hlYOMY64hSb4aH" Name="Camera Component" Kind="OutputPin" />
+            <Pin Id="TqYdRskswvJLTLdL9gbVpP" Name="Interest" Kind="OutputPin" />
           </Node>
-          <Pad Id="I3x79GcTdboMJyaV8w1Qie" Comment="Rotation Type 3D" Bounds="802,2340,101,15" ShowValueBox="true" isIOBox="true" Value="ImproveXYPlanes">
+          <Pad Id="I3x79GcTdboMJyaV8w1Qie" Comment="Rotation Type 3D" Bounds="802,2340,107,15" ShowValueBox="true" isIOBox="true" Value="ImproveXYPlanes">
             <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.CPU.vl">
               <Choice Kind="TypeFlag" Name="RotationType3D" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="UlwIwBmMIZ5PnKDpwFlgq9" Comment="Domain Warp Rotation Type 3D" Bounds="1310,2864,101,15" ShowValueBox="true" isIOBox="true" Value="ImproveXZPlanes">
+          <Pad Id="UlwIwBmMIZ5PnKDpwFlgq9" Comment="Domain Warp Rotation Type 3D" Bounds="1310,2864,107,15" ShowValueBox="true" isIOBox="true" Value="ImproveXZPlanes">
             <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.CPU.vl">
               <Choice Kind="TypeFlag" Name="RotationType3D" />
             </p:TypeAnnotation>
@@ -1194,5 +1207,5 @@
     </Node>
   </Patch>
   <DocumentDependency Id="SlzGvmt2boEQCRopVxdbeu" Location="../vl/VL.FastNoiseLite.CPU.vl" />
-  <NugetDependency Id="CJbNqMrKTAeLaxSmh9t9js" Location="VL.Stride" Version="2024.6.0-0179-g427422701e" />
+  <NugetDependency Id="CJbNqMrKTAeLaxSmh9t9js" Location="VL.Stride" Version="2025.7.0" />
 </Document>

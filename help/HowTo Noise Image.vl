@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Oe7V9lgEtjZO5TY9yybdWx" LanguageVersion="2024.6.0-0179-g427422701e" Version="0.128">
-  <NugetDependency Id="Lh57X0iFXuRMDfqimnBz4j" Location="VL.CoreLib" Version="2024.6.0-0179-g427422701e" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Oe7V9lgEtjZO5TY9yybdWx" LanguageVersion="2025.7.0" Version="0.128">
+  <NugetDependency Id="Lh57X0iFXuRMDfqimnBz4j" Location="VL.CoreLib" Version="2025.7.0" />
   <Patch Id="RjdVo8S6vRjLYdXJblkQLE">
     <Canvas Id="UlAalzjZJDaOJa5wiBjDuh" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -51,21 +51,24 @@
             <Pin Id="IxEGEebv6DtM0LtrvRzssx" Name="Noise Spread" Kind="OutputPin" />
             <Pin Id="QiSldLSoZTOMZ7K7YACJI1" Name="Point Count" Kind="OutputPin" />
           </Node>
-          <Node Bounds="123,857,165,19" Id="JjjkSsPzrqXN9JuupXi1Oo">
+          <Node Bounds="123,857,185,19" Id="JjjkSsPzrqXN9JuupXi1Oo">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="I1TN9NBgziWOlLktHxaVZ0" Name="Bounds" Kind="InputPin" DefaultValue="1374, 72, 481, 504">
+            <Pin Id="NL3zJGa8IFxPy82OCT2AhH" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="I1TN9NBgziWOlLktHxaVZ0" Name="Bounds" Kind="InputPin" DefaultValue="1374, 72, 480, 504">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastDependency="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="Vki0fWM9gxMOnIZ2fjR3A0" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
             <Pin Id="LZv4j9x7STUOhX1UssxSd9" Name="Bound to Document" Kind="InputPin" DefaultValue="True" />
-            <Pin Id="NL3zJGa8IFxPy82OCT2AhH" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="K0spHqAWaGWL2RgAZCKnNd" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
+            <Pin Id="SQ0KLUiTIFkO3JGH3VG12d" Name="Always On Top" Kind="InputPin" IsHidden="true" />
+            <Pin Id="JFQWBaObr0BLdw413EfSyO" Name="Extend Into Title Bar" Kind="InputPin" IsHidden="true" />
             <Pin Id="HCeIO30t4UZLPEZqxuudH8" Name="Input" Kind="InputPin" />
+            <Pin Id="SmMb1aXcy7jM6BgnDTJN3w" Name="Title" Kind="InputPin" />
             <Pin Id="EnRo5vRiLLUQFrmQUff8gn" Name="Color" Kind="InputPin" />
             <Pin Id="GZHOLz0sIxKNUPZdGiwRQL" Name="Clear" Kind="InputPin" />
             <Pin Id="RkYt1N4b2n9LLpVPvMOE7q" Name="Space" Kind="InputPin" />
@@ -116,7 +119,7 @@
               <Choice Kind="TypeFlag" Name="Int2" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="KsA2OJsOzYCMaVVfUIrlT4" Comment="Noise Type" Bounds="162,109,94,15" ShowValueBox="true" isIOBox="true" Value="OpenSimplex2">
+          <Pad Id="KsA2OJsOzYCMaVVfUIrlT4" Comment="Noise Type" Bounds="162,109,101,15" ShowValueBox="true" isIOBox="true" Value="OpenSimplex2">
             <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.Enums.vl">
               <Choice Kind="TypeFlag" Name="NoiseType" />
             </p:TypeAnnotation>
@@ -234,7 +237,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="PoQyWQdJ3JzOL5ZZY5RwbF" Comment="Fractal Type" Bounds="226,152,65,15" ShowValueBox="true" isIOBox="true" Value="Ridged">
+          <Pad Id="PoQyWQdJ3JzOL5ZZY5RwbF" Comment="Fractal Type" Bounds="226,152,72,15" ShowValueBox="true" isIOBox="true" Value="Ridged">
             <p:TypeAnnotation LastCategoryFullName="FastNoiseLite" LastDependency="VL.FastNoiseLite.Skia.vl">
               <Choice Kind="TypeFlag" Name="GeneralFractalType" />
             </p:TypeAnnotation>
@@ -271,6 +274,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Kl3sm8qFRjOLd8DHxEXWZy" Location="VL.Skia" Version="2024.6.0-0179-g427422701e" />
+  <NugetDependency Id="Kl3sm8qFRjOLd8DHxEXWZy" Location="VL.Skia" Version="2025.7.0" />
   <DocumentDependency Id="NL4rX00AS1nL60c1aoSiVy" Location="../vl/VL.FastNoiseLite.Skia.vl" />
 </Document>

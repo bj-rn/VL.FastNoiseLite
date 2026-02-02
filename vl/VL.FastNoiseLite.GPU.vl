@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="IUqqo0nqtMTOnTVcELueBy" LanguageVersion="2024.6.0-0179-g427422701e" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="IUqqo0nqtMTOnTVcELueBy" LanguageVersion="2025.7.0" Version="0.128">
   <Patch Id="Rgz0iK0cdl5O6XLZAnSI2k">
     <Canvas Id="EtMz6eWyJpjMOVOROl6714" DefaultCategory="FastNoiseLite" CanvasType="FullCategory" />
     <!--
@@ -23,8 +23,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Ko9OqCOVyY7Pz8mbJrOqb0" Location="VL.CoreLib" Version="2024.6.0-0179-g427422701e" />
-  <NugetDependency Id="QmDf0pV6owpM9RJrWcXtYV" Location="VL.Stride" Version="2024.6.0-0179-g427422701e" />
-  <NugetDependency Id="P9Qf9AtaOiWP3KOu24OMxE" Location="VL.Stride.TextureFX" Version="2024.6.0-0179-g427422701e" />
+  <NugetDependency Id="Ko9OqCOVyY7Pz8mbJrOqb0" Location="VL.CoreLib" Version="2025.7.0" />
+  <NugetDependency Id="QmDf0pV6owpM9RJrWcXtYV" Location="VL.Stride" Version="2025.7.0" />
+  <NugetDependency Id="P9Qf9AtaOiWP3KOu24OMxE" Location="VL.Stride.TextureFX" Version="2025.7.0" />
   <DocumentDependency Id="Ky9hZ3P9oTkMameNREazNe" Location="./VL.FastNoiseLite.Enums.vl" />
 </Document>
